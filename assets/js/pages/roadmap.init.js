@@ -1,0 +1,1 @@
+var swiper=new Swiper(".roadmapSlider",{slidesPerView:5,spaceBetween:0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},autoplay:{delay:2500,disableOnInteraction:!1},breakpoints:{"@0.00":{slidesPerView:1},"@0.75":{slidesPerView:2},992:{slidesPerView:5}}});

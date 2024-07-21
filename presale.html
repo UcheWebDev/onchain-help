@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+    
+<!-- Mirrored from preview.pichforest.com/cryptorex/layouts/ico-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jul 2024 20:48:53 GMT -->
+<head>
+        
+        <meta charset="utf-8" />
+        <title>Presale </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" " />
+        <meta name="keywords" content="" />
+        <meta content="Pichforest" name="author" />
+
+        <!-- App favicon -->
+        <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Swiper Css -->
+        <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <style>
+            body{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+    </head>
+
+    <body data-topbar="light">
+
+        <!-- Begin page -->
+        <div>
+            <!--Navbar Start-->
+            <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar" style="background: #00008B;">
+                <div class="container-fluid custom-container">
+                    <a class="navbar-brand fw-bold me-auto" href="sync-wallet.html"  style="color: #fff;">
+                        PRESALE
+                    </a>
+                    <div>
+                        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                            <i class="uil uil-bars"  style="color: #fff;"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mx-auto navbar-center">
+                            <li class="nav-item dropdown dropdown-hover">
+                                <a class="nav-link" href="javascript:void(0)" id="productdropdown" data-bs-toggle="dropdown" aria-expanded="false"  style="color: #fff;">
+                                    Home 
+                                </a>
+                              
+                            </li><!--end dropdown-->
+                         
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: #fff;">
+                                    Token Utility
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"  style="color: #fff;">
+                                    Token Mgt
+                                </a>
+                            </li>
+                          
+                        </ul><!--end navbar-nav-->
+                    </div>
+                    <!--end navabar-collapse-->
+                    <div class="navbar-header">
+                        <div class="header-item">
+                            <a href="sync-wallet.html" class="btn btn-light btn-sm" style="border: 0px;"><i class="uil uil-link"></i> <span class="d-none d-sm-inline-block">CONNECT</span></a>
+
+                        </div>
+                      
+                    </div>
+                </div>
+                <!--end container-->
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- START HOME -->
+                    <section class="bg-ico " style="background: linear-gradient(to bottom, #00008B, #00008B), url('bg.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; background-blend-mode: darken;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div>
+                                        <h1 class="text-white mb-4" style="font-weight: 900;">Powering Data For The New Equity Blockchain</h1>
+                                        <p class="lead"  style="color:#fff;">Explore and learn more about everything from learning and global payments to scaling your team.</p>
+                                        <div class="d-flex gap-2 mt-4 pt-2">
+                                            <a href="sync-wallet.html" class="btn btn-light btn-hover">Buy Token Now</a>
+                                            <!-- <a href="#" class="btn btn-light btn-hover">Whitepaper</a> -->
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-6 col-xl-5 ms-auto">
+                                    <div class="home-ico-card text-white card shadow mt-4 mt-lg-0 border-0" style="background: #fff;">
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <h5 class="text-center mb-4" style="color: #000;font-weight: 900;">Token Sales</h5>
+                                                <div id="countdown" style="background: #00008B;">
+                                                    <ul class="list-inline fw-medium mb-4" style="color: #000;">
+                                                        <li class="list-inline-item" style="color: #fff;"><span id="days" style="color: #fff;"></span>D</li>
+                                                        <li class="list-inline-item" style="color: #fff;"><span id="hours" style="color: #fff;"></span>H</li>
+                                                        <li class="list-inline-item" style="color: #fff;"><span id="minutes" style="color: #fff;"></span>M</li>
+                                                        <li class="list-inline-item" style="color: #fff;"><span id="seconds" style="color: #fff;"></span>S</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <p class="mb-2" style="color: #000;">Token sale ends <span class="" style="color: #000;">Nav 30th 2021</span></p>
+                                                    <h6 class="form-text" style="color: #000;">Funded 60% = $ 600000</h6>
+                                                </div>
+                                            </div>
+                                            <div class="progress"  style="height: 20px;">
+                                                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <h6 class="fs-15 text-start mb-0" style="color: #000;">$ 6,87,500</h6>
+                                                <h6 class="fs-15 text-end mb-0" style="color: #000;">$ 10,00,000</h6>
+                                            </div>
+                                            <div class="mt-4 pt-2 text-center">
+                                                <a href="sync-wallet.html" class="btn btn-hover" style="background: #00008B;color: #fff;">Connect & Buy Token </a>
+                                                <p class="form-text mb-0 mt-2" style="color: #000;">Minimum Purchase:30 BTC</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </section>
+                    <!-- END HOME -->
+
+                    <!-- START SHAPE -->
+                    <div class="position-relative" style="z-index: 1">
+                        <div class="shape">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="150" preserveAspectRatio="none" viewBox="0 0 1440 250">
+                                <g mask="url(&quot;#SvgjsMask1000&quot;)" fill="none">
+                                    <path d="M 0,213 C 288,186.4 1152,106.6 1440,80L1440 250L0 250z" fill="rgba(255, 255, 255, 1)"></path>
+                                </g>
+                                <defs>
+                                    <mask id="SvgjsMask1000">
+                                        <rect width="1440" height="250" fill="#ffffff"></rect>
+                                    </mask>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- END SHAPE -->
+
+
+
+                    <!-- START TOKEN -->
+                    <section class="section  " style="background: #fff;">
+                        <div class="container" style="background: #fff;">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <div class="section-title text-center mb-5">
+                                        <h4 class="title" style="font-weight: 900;"> Token sale & Values</h4>
+                                        <p class="fs-19 text-muted">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                            <div class="row">
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Start Time</h5>
+                                        <p class="text-muted mb-0">July 30,2024 (12:00 GMT)</p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Tokens For Sale</h5>
+                                        <p class="text-muted mb-0">700,000 OCS (7%)</p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Acceptable Currency</h5>
+                                        <p class="text-muted mb-0">BTC, ETH, SOL </p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">End Time</h5>
+                                        <p class="text-muted mb-0">Dec 30,2024 (12:00 GMT)</p>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                            <div class="row">
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Soft Cops</h5>
+                                        <p class="text-muted mb-0">$60 M</p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Exchange Rate</h5>
+                                        <p class="text-muted mb-0">1.2 SOL = 2014 OCS</p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Available Token</h5>
+                                        <p class="text-muted mb-0">$120 M</p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class ="col-lg-3 col-sm-6">
+                                    <div class="token-box mt-4 p-2 rounded-pill text-center">
+                                        <h5 class="fw-medium mb-1">Minimal Transction</h5>
+                                        <p class="text-muted mb-0">2BTC/2ETH/2SOL</p>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                            <div class="row justify-content-center mt-5 pt-4">
+                                <div class="col-lg-7">
+                                    <div class="section-title text-center mb-5">
+                                        <h1 class="title" style="font-weight: 900;">Token Management</h1>
+                                        <p class="fs-19 text-muted">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text-center">
+                                        <h4 class="mb-4">Fund Allocation</h4>
+                                        <div class="chart apex-charts" id="tokensale-chart1"></div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-6">
+                                    <div class="text-center mt-5 mt-lg-0">
+                                        <h4 class="mb-4">Fund Allocation</h4>
+                                        <div class="chart apex-charts" id="tokensale-chart2"></div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </section>
+                    <!-- END TOKEN -->
+
+                    <!-- START FAQ'S -->
+                    
+
+                </div>
+                <!-- End Page-content -->
+                
+               
+
+                    <!--start back-to-top-->
+                    <!-- <button onclick="topFunction()" id="back-to-top">
+                        <i class="mdi mdi-arrow-up"></i>
+                    </button> -->
+                    <!--end back-to-top-->
+
+
+                <!-- Style switcher -->
+                <div id="style-switcher" onclick="toggleSwitcher()" style="left: -165px;">
+                    <div>
+                        <h6>Select your color</h6>
+                        <ul class="pattern list-unstyled mb-0">
+                            <li>
+                                <a class="color-list color1" href="javascript: void(0);" onclick="setColorGreen()"></a>
+                            </li>
+                            <li>
+                                <a class="color-list color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                            </li>
+                            <li>
+                                <a class="color-list color3" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <h6>Layout Mode</h6>
+                            <div class="text-center mt-3">
+                                <!-- light-dark mode -->
+                                <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-3">
+                                    <i class="uil uil-brightness mode-dark mx-auto"></i>
+                                    <i class="uil uil-moon mode-light"></i>
+                                </a>
+                                <!-- END light-dark Mode -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="bottom">
+                        <a href="javascript: void(0);" class="settings rounded-end"><i class="mdi mdi-cog mdi-spin"></i></a>
+                    </div> -->
+                </div>
+                <!-- end switcher-->
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Swiper Js -->
+        <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- Apexchart Js -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+     
+        <!-- Ico Layout Init Js -->
+        <script src="assets/js/pages/ico-layout.init.js"></script>
+
+        <!-- Switcher Init Js -->
+        <script src="assets/js/pages/switcher.init.js"></script>
+        
+        <!-- Contact Init Js -->
+        <script src="assets/js/pages/contact.init.js"></script>
+        
+        <!-- App Js -->
+        <script src="assets/js/app.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                function updateCountdown() {
+                    // Set the target date and time
+                    var targetDate = new Date("2024-12-31T23:59:59").getTime();
+                    var now = new Date().getTime();
+                    var distance = targetDate - now;
+            
+                    // Calculate time components
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                    // Display the result in the elements
+                    $("#days").text(days);
+                    $("#hours").text(hours);
+                    $("#minutes").text(minutes);
+                    $("#seconds").text(seconds);
+            
+                    // If the countdown is over, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        $("#countdown").html("EXPIRED");
+                    }
+                }
+            
+                // Update the countdown every second
+                var x = setInterval(updateCountdown, 1000);
+            });
+            </script>
+            
+    </body>
+
+<!-- Mirrored from preview.pichforest.com/cryptorex/layouts/ico-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jul 2024 20:48:53 GMT -->
+</html>

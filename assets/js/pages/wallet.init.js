@@ -1,0 +1,1 @@
+var swiper=new Swiper(".testimonialSlider",{loop:!0,slidesPerView:1,spaceBetween:30,pagination:{el:".swiper-pagination",dynamicBullets:!0},autoplay:{delay:2500,disableOnInteraction:!1},breakpoints:{768:{slidesPerView:2,spaceBetween:40},1024:{slidesPerView:3,spaceBetween:50}}});
